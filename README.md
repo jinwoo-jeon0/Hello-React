@@ -4,6 +4,9 @@
 
 # Install scoop
 [http://scoop.sh/](http://scoop.sh/)
+
+scoop is a command-line installer for Windows. This is needed to install Yarn and nodejs.
+
 ## Prepare a preferred location
 * default: `%USERPROFILE%\scoop`
 ```
@@ -11,14 +14,17 @@ mkdir "%new-scoop-dir%"
 mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
 ```
 
-## Install scoop
+## Install
 ```
 powershell -ExecutionPolicy RemoteSigned -Command "iex (new-object net.webclient).downloadstring('https://get.scoop.sh')"
 ```
 
 
-# Install Yarn and nodejs via scoop
+# Install Yarn and nodejs
 [https://yarnpkg.com/](https://yarnpkg.com/)
+
+Yarn is a package manager. This is needed to use React.
+
 ## Prepare a preferred location
 * default: `%LOCALAPPDATA%\Yarn`
 ```
@@ -26,7 +32,7 @@ mkdir "%new-Yarn-dir%"
 mklink /j %LOCALAPPDATA%\Yarn "%new-Yarn-dir%"
 ```
 
-## Install Yarn
+## Install
 ```
 scoop install nodejs
 scoop install yarn
@@ -35,7 +41,6 @@ scoop install yarn
 
 # Install React
 [https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react](https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react)
-
 
 ```
 yarn init
