@@ -13,6 +13,7 @@ scoop is a command-line installer for Windows. This is needed to install Yarn an
 mkdir "%new-scoop-dir%"
 mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
 ```
+[install-scoop.cmd](https://gist.github.com/jinwoo-jeon0/c503487e4f13c7c680d53d58750873b9)
 
 ## Install
 ```
