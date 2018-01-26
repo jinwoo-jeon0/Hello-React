@@ -52,7 +52,17 @@ yarn add react react-dom
 # Create a new app
 ```
 npx create-react-app hello-react
-
 cd hello-react
+```
+
+## Development mode
+```
 yarn start
+```
+
+## Production mode
+```
+yarn build
+yarn global add serve
+%LOCALAPPDATA%\Yarn\bin\serve -s build
 ```
