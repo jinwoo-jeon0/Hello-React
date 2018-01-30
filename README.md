@@ -66,3 +66,9 @@ yarn build
 yarn global add serve
 %LOCALAPPDATA%\Yarn\bin\serve -s build
 ```
+### Stop serve
+[front the stackoverflow answer](https://stackoverflow.com/a/48089171/3300315)
+```
+%LOCALAPPDATA%\Yarn\bin\serve
+```
+And the use `CTRL-C`
