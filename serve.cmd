@@ -1,1 +1,1 @@
-call "%LOCALAPPDATA%\Yarn\bin\serve.cmd"
+call "%LOCALAPPDATA%\Yarn\bin\serve.cmd" %*
