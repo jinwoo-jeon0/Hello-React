@@ -72,3 +72,9 @@ yarn global add serve
 %LOCALAPPDATA%\Yarn\bin\serve
 ```
 And the use `CTRL-C`
+
+
+# Unit Testing
+```
+yarn test
+```
