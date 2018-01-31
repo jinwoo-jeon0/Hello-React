@@ -61,14 +61,22 @@ yarn start
 ```
 
 ## Production mode
+### Prepare
+```
+yarn global add serve
+```
+
+### Build & Run
 ```
 yarn build
-yarn global add serve
 %LOCALAPPDATA%\Yarn\bin\serve -s build
 ```
-### Stop serve
-[front the stackoverflow answer](https://stackoverflow.com/a/48089171/3300315)
+
+### Stop
+I found this in [a stackoverflow answer](https://stackoverflow.com/a/48089171/3300315).
+
+Run serve with no argument.
 ```
 %LOCALAPPDATA%\Yarn\bin\serve
 ```
-And the use `CTRL-C`
+And then use `CTRL-C`.
