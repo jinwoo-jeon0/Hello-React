@@ -1,6 +1,33 @@
 # Environment
 * Windows 10 64-bit
 
+# How to run
+
+## Prepare
+
+```sh
+git clone https://github.com/jinwoo-jeon0/Hello-React.git
+cd Hello-React
+yarn
+```
+
+## Develop
+
+```sh
+yarn start
+```
+
+## Build
+
+```sh
+yarn build
+```
+
+## Run using `serve`
+
+```sh
+yarn serve -s build
+```
 
 # Install scoop
 [http://scoop.sh/](http://scoop.sh/)
