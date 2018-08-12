@@ -42,7 +42,7 @@ scoop is a command-line installer for Windows. This is needed to install Yarn an
 
 * default: `%USERPROFILE%\scoop`
 
-```
+```bat
 mkdir "%new-scoop-dir%"
 mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
 ```
@@ -51,7 +51,7 @@ mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
 
 ### Install
 
-```
+```bat
 powershell -ExecutionPolicy RemoteSigned -Command "iex (new-object net.webclient).downloadstring('https://get.scoop.sh')"
 ```
 
@@ -65,14 +65,14 @@ Yarn is a package manager. This is needed to use React.
 
 * default: `%LOCALAPPDATA%\Yarn`
 
-```
+```bat
 mkdir "%new-Yarn-dir%"
 mklink /j %LOCALAPPDATA%\Yarn "%new-Yarn-dir%"
 ```
 
 ### Install
 
-```
+```bat
 scoop install nodejs
 scoop install yarn
 ```
@@ -81,21 +81,21 @@ scoop install yarn
 
 [https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react](https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react)
 
-```
+```bat
 yarn init
 yarn add react react-dom
 ```
 
 ## Create a new app
 
-```
+```bat
 npx create-react-app hello-react
 cd hello-react
 ```
 
 ### Development mode
 
-```
+```bat
 yarn start
 ```
 
@@ -103,13 +103,13 @@ yarn start
 
 #### Prepare
 
-```
+```bat
 yarn global add serve
 ```
 
 #### Build & Run
 
-```
+```bat
 yarn build
 %LOCALAPPDATA%\Yarn\bin\serve -s build
 ```
@@ -120,7 +120,7 @@ I found this in [a stackoverflow answer](https://stackoverflow.com/a/48089171/33
 
 Run serve with no argument.
 
-```
+```bat
 %LOCALAPPDATA%\Yarn\bin\serve
 ```
 
