@@ -41,6 +41,7 @@ scoop is a command-line installer for Windows. This is needed to install Yarn an
 ### Prepare a preferred location
 
 * default: `%USERPROFILE%\scoop`
+
 ```
 mkdir "%new-scoop-dir%"
 mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
@@ -63,6 +64,7 @@ Yarn is a package manager. This is needed to use React.
 ### Prepare a preferred location
 
 * default: `%LOCALAPPDATA%\Yarn`
+
 ```
 mkdir "%new-Yarn-dir%"
 mklink /j %LOCALAPPDATA%\Yarn "%new-Yarn-dir%"
