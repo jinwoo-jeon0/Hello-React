@@ -5,6 +5,7 @@
 
 # testing
 /coverage
+.nyc_output/
 
 # production
 /build
@@ -22,6 +23,3 @@ yarn-error.log*
 
 # vim
 *.un~
-
-# istanbul
-.nyc_output/
