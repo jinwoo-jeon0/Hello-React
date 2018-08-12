@@ -55,7 +55,6 @@ mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
 powershell -ExecutionPolicy RemoteSigned -Command "iex (new-object net.webclient).downloadstring('https://get.scoop.sh')"
 ```
 
-
 ## Install Yarn and nodejs
 
 [https://yarnpkg.com/](https://yarnpkg.com/)
@@ -78,7 +77,6 @@ scoop install nodejs
 scoop install yarn
 ```
 
-
 ## Install React
 
 [https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react](https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react)
@@ -87,7 +85,6 @@ scoop install yarn
 yarn init
 yarn add react react-dom
 ```
-
 
 ## Create a new app
 
