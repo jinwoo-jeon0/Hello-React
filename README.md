@@ -46,6 +46,7 @@ scoop is a command-line installer for Windows. This is needed to install Yarn an
 mkdir "%new-scoop-dir%"
 mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
 ```
+
 [install-scoop.cmd](https://gist.github.com/jinwoo-jeon0/c503487e4f13c7c680d53d58750873b9)
 
 ### Install
@@ -121,7 +122,9 @@ yarn build
 I found this in [a stackoverflow answer](https://stackoverflow.com/a/48089171/3300315).
 
 Run serve with no argument.
+
 ```
 %LOCALAPPDATA%\Yarn\bin\serve
 ```
+
 And then use `CTRL-C`.
