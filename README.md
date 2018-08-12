@@ -38,7 +38,7 @@ yarn serve -s build
 
 scoop is a command-line installer for Windows. This is needed to install Yarn and nodejs.
 
-### Prepare a preferred location
+### Prepare a preferred location for scoop
 
 * default: `%USERPROFILE%\scoop`
 
@@ -49,7 +49,7 @@ mklink /j %USERPROFILE%\scoop "%new-scoop-dir%"
 
 [install-scoop.cmd](https://gist.github.com/jinwoo-jeon0/c503487e4f13c7c680d53d58750873b9)
 
-### Install
+### Install scoop using the official script
 
 ```bat
 powershell -ExecutionPolicy RemoteSigned -Command "iex (new-object net.webclient).downloadstring('https://get.scoop.sh')"
@@ -61,7 +61,7 @@ powershell -ExecutionPolicy RemoteSigned -Command "iex (new-object net.webclient
 
 Yarn is a package manager. This is needed to use React.
 
-### Prepare a preferred location
+### Prepare a preferred location for Yarn
 
 * default: `%LOCALAPPDATA%\Yarn`
 
@@ -70,7 +70,7 @@ mkdir "%new-Yarn-dir%"
 mklink /j %LOCALAPPDATA%\Yarn "%new-Yarn-dir%"
 ```
 
-### Install
+### Install Yarn
 
 ```bat
 scoop install nodejs
@@ -101,7 +101,7 @@ yarn start
 
 ### Production mode
 
-#### Prepare
+#### Install server globally
 
 ```bat
 yarn global add serve
