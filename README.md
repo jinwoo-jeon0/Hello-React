@@ -1,5 +1,7 @@
 # Hello React
 
+[![Build Status](https://travis-ci.com/jinwoo-jeon0/Hello-React.svg?branch=master)](https://travis-ci.com/jinwoo-jeon0/Hello-React)
+
 ## Environment
 
 * Windows 10 64-bit
