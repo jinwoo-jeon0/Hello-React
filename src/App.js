@@ -8,9 +8,6 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Hello React</h1>
         </header>
-        <p>
-        Hello React!
-        </p>
       </div>
     );
   }
