@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    fetch('/hello-express')
+      .then(_ => {
+        const reader = _.body.getReader();
+        const handle = ({ value, done }) => {
+          console.log(value, done);
+          if (!done)
+            reader.read().then(handle).catch(console.error);
+        };
+        reader.read().then(handle).catch(console.error);
+      });
+  }
+
+
   render() {
     return (
       <div className="App">

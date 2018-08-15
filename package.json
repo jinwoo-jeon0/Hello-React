@@ -17,5 +17,10 @@
   },
   "devDependencies": {
     "concurrently": "^3.6.1"
+  },
+  "proxy": {
+    "/hello-express": {
+      "target": "http://localhost:3001/"
+    }
   }
 }
