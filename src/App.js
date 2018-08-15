@@ -8,6 +8,11 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Hello React</h1>
         </header>
+        <p>
+          <input type="text" id="id" placeholder="id"/>
+          <input type="password" id="password" placeholder="password"/>
+          <input type="submit"/>
+        </p>
       </div>
     );
   }
