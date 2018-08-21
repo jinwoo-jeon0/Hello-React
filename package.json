@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "server": "cd hello-express && node index.js"
+    "server": "cd hello-express && yarn nodemon index.js"
   },
   "devDependencies": {
     "concurrently": "^3.6.1"
