@@ -1,0 +1,11 @@
+{
+  "name": "hello-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jinwoo Jeon <jinwoo.jeon0@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2"
+  }
+}
