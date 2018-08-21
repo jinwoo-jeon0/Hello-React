@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  componentDidMount() {
+  handleSubmit() {
     fetch('/hello-express')
       .then(_ => {
         const reader = _.body.getReader();
@@ -15,18 +15,17 @@ class App extends Component {
       });
   }
 
-
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Hello React</h1>
         </header>
-        <p>
-          <input type="text" id="id" placeholder="id"/>
-          <input type="password" id="password" placeholder="password"/>
-          <input type="submit"/>
-        </p>
+        <form onSubmit={this.handleSubmit}>
+          <input type="text" id="id" placeholer="id" />
+          <input type="password" id="password" placeholder="password" />
+          <input type="submit" />
+        </form>
       </div>
     );
   }
