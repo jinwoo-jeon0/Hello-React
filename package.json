@@ -9,6 +9,7 @@
     "serve": "^9.3.0"
   },
   "scripts": {
+    "postinstall": "cd hello-express && yarn",
     "start": "concurrently \"yarn react-scripts start\" \"yarn server\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
